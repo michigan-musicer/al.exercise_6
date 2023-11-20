@@ -77,6 +77,8 @@ void f6() {
 }
 
 // filled in to allow you to test warmup functions.
+// Add function calls to f1, f2... if you would like to 
+// see what happens when those functions run.
 int main() {
     char* test = "Hello";
     char* copy = create_string(test, strlen(test));
