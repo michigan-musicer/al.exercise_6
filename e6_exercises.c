@@ -59,7 +59,6 @@ void f4() {
     *x_ptr = 8;
     printf("value at address %x is %d\n", x_ptr, *x_ptr);
     free(x_ptr);
-    free(x_ptr);
 }
 
 void f5() {
@@ -67,9 +66,19 @@ void f5() {
     *x_ptr = 8;
     printf("value at address %x is %d\n", x_ptr, *x_ptr);
     free(x_ptr);
+    free(x_ptr);
 }
 
 void f6() {
+    int* x_ptr = malloc(4);
+    *x_ptr = 8;
+    printf("value at address %x is %d\n", x_ptr, *x_ptr);
+    free(x_ptr);
+    *x_ptr = 100;
+    printf("value at address %x is %d\n", x_ptr, *x_ptr);
+}
+
+void f7() {
     char* str = malloc(5);
     strcpy(str, "hello");
     printf("string contents: %s\n", str);
